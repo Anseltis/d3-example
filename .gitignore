@@ -1,0 +1,4 @@
+node_modules
+dist
+asset/out.json
+.vscode

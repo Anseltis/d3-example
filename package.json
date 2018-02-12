@@ -1,0 +1,40 @@
+{
+  "name": "class-diag",
+  "version": "1.0.0",
+  "description": "class diagram using d3.js",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node ./dev-server.ts",
+    "dev-start": "webpack-dev-server --config ./dev-server-config.ts",
+    "build": "npm run bundle && npm run copy",
+    "bundle": "webpack --config ./webpack-config.ts",
+    "copy": "cpx ./index.html ./dist/ -u"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/d3": "^4.12.0",
+    "@types/d3-fetch": "^1.0.1",
+    "@types/webpack": "^3.8.5",
+    "@types/webpack-dev-server": "^2.9.2",
+    "awesome-typescript-loader": "^3.4.1",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "cpx": "^1.5.0",
+    "css-loader": "^0.28.9",
+    "style-loader": "^0.20.1",
+    "ts-node": "^4.1.0",
+    "tslint": "^5.9.1",
+    "tslint-loader": "^3.5.3",
+    "typescript": "^2.7.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "d3": "^4.13.0",
+    "d3-fetch": "^1.0.1"
+  }
+}
